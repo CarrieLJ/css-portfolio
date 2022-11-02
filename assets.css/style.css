@@ -1,6 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 .body {
     display: flex;
-    box-sizing: border-box;
+    flex-flow: column wrap;
     padding: 0;
     margin: 0;
 }
@@ -22,24 +26,30 @@ h1 {
 .navbar {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     background-color: rgb(255, 219, 13);
     color: black;
 }   
 
-navbar div li {
-    padding: 50px;
-    list-style-type: none;
-}    
+button {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    margin: 0 .5%;
+    font-size: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(231, 123, 186);
+}
 
 .image {
     display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 40%;;
-    padding: 20px;
-    max-width: 200px;
+    flex-flow: column wrap;
+    flex-basis: auto;
+    align-items: center;
+    align-content: center;
 }
 
 p {
@@ -50,13 +60,15 @@ p {
     color: #fff;
 }
 
-.content div {
-    background-color: rgb(141, 9, 86);
+.container div {
     display: flex;
+    flex-flow: column wrap;
+    background-color: rgb(141, 9, 86);
     justify-content: space-evenly;
-    flex-direction: column;
     align-items: center;
+    align-content: center;
     padding: 5px;
+    margin: 10px;
 }
 
 .about-me {
@@ -66,9 +78,11 @@ p {
 }
 
 .about-me-img {
-    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 100px;
     margin: 20px;
     max-width: 500px;
+    min-width: 10px;
 }
 
 .examples {
@@ -77,10 +91,35 @@ p {
 }
 
 .examples-img {
-    display: flex;
-    justify-content: center;
     margin: 20px;
     max-width: 500px; 
+}
+
+.example-1 {
+    font-size: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.example-1:hover {
+    font-size: larger;
+}
+
+.example-2 {
+    font-size: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.example-2:hover {
+    font-size: larger;
+}
+
+.example-3 {
+    font-size: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.example-3:hover {
+    font-size: larger;
 }
 
 .contact-me {
@@ -89,14 +128,11 @@ p {
 }
 
 .contact-me-img {
-    display: flex;
-    justify-content: center;
     margin: 20px;
     max-width: 500px; 
 }
 
-.content div li {
-    display: flex;
+.container div li {
     padding: 5px;    
     font-size: 30px;
     background-color: rgb(141, 9, 86);
