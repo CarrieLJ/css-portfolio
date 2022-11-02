@@ -4,18 +4,26 @@
     <head>
         <title>Carrie Jensen Portfolio</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="./assets.css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./assets.css/style.css">
     </head>
 
     <body>
-        <div class="navbar">
-            <a href="#About Me">About Me</a>
-            <br>
-            <a href="#Examples">Examples of my Work</a>
-            <br>
-            <a href="#Contact Me">Contact Me</a>
-        </div>
+        <section>
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="#about-me">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#examples">Examples of my Work</a>
+                    </li>
+                    <li>
+                        <a href="#contact-me">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
         <div class="header">
             <header>
@@ -23,33 +31,40 @@
             </header>
         </div>
 
-        <div class="image">
-            <img src="./assets.css/me.jpeg">
-        </div>
+        <section>
+            <div class="image">
+                <img src="./assets.css/me.jpeg">
+            </div>
+        </section>
 
-        <div class="About Me">
-            <img src="./assets.css/about-me.png" class="about-me" />
-            <p>
-                Currently working as a Data Management Professional but looking to expand my career into Web Development!
-            </p>
-        </div>
+        <section>
+            <div class="content">
 
-        <div class="Examples">
-            <img src="./assets.css/example.jpg" />
-            <p>
-                put examples here
-            </p>
-        </div>
+                <div id="about-me" class="about-me">
+                    <img src="./assets.css/about-me.png" class="about-me-img" />
+                    <p>
+                        Currently working as a Data Management Professional but looking to expand my career into Web Development!
+                    </p>
+                </div>
 
-        <div class="Contact Me">
-            <img src="./assets.css/contact-me.jpg" />
-            <p>
-                <ul>
-                    <li>Phone Number: 555-555-5555</li>
-                    <li>Email: Me@email.com</li>
-                </ul>
-            </p>
-        </div>
+                <div id="examples" class="examples">
+                    <img src="./assets.css/example.jpg" class="examples-img" />
+                    <p>
+                        put examples here
+                    </p>
+                </div>
+
+                <div id="contact-me" class="contact-me">
+                    <img src="./assets.css/contact-me.jpg" class="contact-me-img" />
+                    <p>
+                        <ul>
+                            <li>Phone Number: 555-555-5555</li>
+                            <li>Email: Me@email.com</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </section>
 
         </div>
 

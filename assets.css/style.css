@@ -1,8 +1,8 @@
 .body {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 2;    
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 .header {
@@ -14,21 +14,23 @@
 }
 
 h1 {
+    display: inline-block;
     font-size: 200%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     margin: 0;
     padding: 0;
     background-color: rgb(255, 219, 13);
     color: black;
 }   
 
-navbar div {
+navbar div li {
     padding: 50px;
+    list-style-type: none;
 }    
 
 .image {
@@ -40,18 +42,63 @@ navbar div {
     max-width: 200px;
 }
 
-.About Me {
-    display: flex
+p {
+    display: flex;
+    padding: 5px;    
+    font-size: 30px;
+    background-color: rgb(141, 9, 86);
+    color: #fff;
+}
+
+.content div {
+    background-color: rgb(141, 9, 86);
+    display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
-    position: relative;
-    max-width: 10px;
-    max-height: 10px;
+    align-items: center;
+    padding: 5px;
 }
 
-.Examples {
-    max-width: 100px;
+.about-me {
+    padding: 5px;
+    margin: 5px;
+    border: rgb(255, 219, 13)
 }
 
-.Contact Me {
-    max-width: 100px;
+.about-me-img {
+    display: flex;
+    margin: 20px;
+    max-width: 500px;
+}
+
+.examples {
+    padding: 5px;
+    margin: 5px;
+}
+
+.examples-img {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    max-width: 500px; 
+}
+
+.contact-me {
+    padding: 5px;
+    margin: 5px;
+}
+
+.contact-me-img {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    max-width: 500px; 
+}
+
+.content div li {
+    display: flex;
+    padding: 5px;    
+    font-size: 30px;
+    background-color: rgb(141, 9, 86);
+    color: #fff;
 }
