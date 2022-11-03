@@ -1,12 +1,18 @@
 * {
     box-sizing: border-box;
 }
+  
+@media screen and (max-width: 500px) {
+    .body {
+        width: 50px;
+    }
+  }
 
 .body {
     display: flex;
     flex-flow: column wrap;
-    padding: 0;
-    margin: 0;
+    padding: 5px;
+    margin: 5px;
 }
 
 .header {
@@ -21,17 +27,14 @@ h1 {
     display: inline-block;
     font-size: 200%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2px;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content:flex-end;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(255, 219, 13);
-    color: black;
 }   
 
 button {
@@ -41,7 +44,7 @@ button {
     margin: 0 .5%;
     font-size: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgb(231, 123, 186);
+    background-color: white;
 }
 
 .image {
@@ -50,6 +53,7 @@ button {
     flex-basis: auto;
     align-items: center;
     align-content: center;
+
 }
 
 p {
@@ -96,30 +100,27 @@ p {
 }
 
 .example-1 {
-    font-size: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 10px;
+    max-block-size: 2px;
+    align-content:space-around;
+    ;
 }
 
 .example-1:hover {
-    font-size: larger;
+    
 }
 
 .example-2 {
-    font-size: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 10px;
+    max-block-size: 2px;
+    position: relative;
+    margin: 10px;
+    border: 10px;
+    align-content:space-between;
 }
 
 .example-2:hover {
-    font-size: larger;
-}
-
-.example-3 {
-    font-size: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.example-3:hover {
-    font-size: larger;
+    font-size:x-large;
 }
 
 .contact-me {
